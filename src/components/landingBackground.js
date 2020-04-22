@@ -15,68 +15,71 @@ function LandingBackground(props) {
     };
   }, []);
 
-  let readMore = 0;
-  let contact = 0;
-  let verticalLinesWidth = "75%";
-  let horizontalLinesWidth = "40%";
-  let centerDisplace = 0;
-  let mouseMoveScale = 1.3;
-  let spacerHeight = 240;
-  let spacerOpacity = 1;
+  var windowWidth = props.state.windowWidth;
+
+
+  var lineTopStart;
+  var lineRightStart;
+  var lineBottomStart;
+  var lineLeftStart;
+
+  var lineLeftHeight;
+  var lineRightHeight;
+
+  var mouseMoveScale;
+
   if (props.state.transition == "hero") {
-    let readMore = 0;
-    contact = 0;
-    let verticalLinesWidth = "75%";
-    let horizontalLinesWidth = "65%";
-    let centerDisplace = 0;
-    let mouseMoveScale = 1.3;
-    spacerHeight = 240;
-    spacerOpacity = 1;
+    lineTopStart = windowWidth*0.05;
+    lineRightStart = windowWidth*0.17;
+    lineBottomStart = 0;
+    lineLeftStart = windowWidth*0.17;
+
+    lineLeftHeight = "25%";
+    lineRightHeight = "15%";
+
+    mouseMoveScale = 1;
   }
   else if (props.state.transition == "readMore") {
-    readMore = 1200;
-    contact = 50;
-    verticalLinesWidth = "70%";
-    centerDisplace = "-40%";
-    horizontalLinesWidth = "40%";
-    mouseMoveScale = 1/2;
-    spacerHeight = 0;
-    spacerOpacity = 0;
+    lineTopStart = windowWidth*0.50;
+    lineRightStart = windowWidth*0.33;
+    lineBottomStart = -windowWidth*0.2;
+    lineLeftStart = windowWidth*0.08;
+
+    lineLeftHeight = "60%";
+    lineRightHeight = "60%";
+
+    mouseMoveScale = 0.5;
   }
   else if (props.state.transition == "contact") {
-    readMore = 1000;
-    contact = 1200;
-    verticalLinesWidth = "70%";
-    centerDisplace = "-40%";
-    horizontalLinesWidth = "40%";
-    mouseMoveScale = 1/2;
-    spacerHeight = 0;
-    spacerOpacity = 0;
+    lineTopStart = windowWidth*0.45;
+    lineRightStart = windowWidth*0.28;
+    lineBottomStart = -windowWidth*0.7;
+    lineLeftStart = windowWidth*0.05;
+
+    lineLeftHeight = "60%";
+    lineRightHeight = "60%";
+
+    mouseMoveScale = 0.5;
   }
 
-
-  let lineLeft = `interactive-background line-left`;
-  let lineRight = `interactive-background line-right`;
-  let lineTop = `interactive-background line-top`;
-  let lineBottom = `interactive-background line-bottom`;
-
-  // Include the big JS if you want.
-  // <img src= className="big-js" />
-
-  // <div className="background-spacer" style={{height: spacerHeight, opacity: spacerOpacity}}/>
-  // <div className={lineLeft} style={{top: 83 + (position.x - props.state.windowWidth/3)*mouseMoveScale/10, width: verticalLinesWidth, left: centerDisplace}}/>
-  // <div className={lineRight} style={{bottom: 125 + (position.x - props.state.windowWidth/6)*mouseMoveScale/10, width: verticalLinesWidth, left: centerDisplace}}/>
-  // <div className={lineTop} style={{left: props.state.windowWidth/12 + (position.y - 222)*mouseMoveScale/7, width: horizontalLinesWidth}}/>
-  // <div className={lineBottom} style={{left: contact + 6*props.state.windowWidth/12 - (position.y - 222)*mouseMoveScale/7, width: horizontalLinesWidth,}}/>
-
-
   return(
-    <div>
-      <div className="background-spacer" style={{height: spacerHeight, opacity: spacerOpacity}}/>
-      <div className={lineLeft} style={{left: 0 - readMore/10 + (position.x - props.state.windowWidth/3)*mouseMoveScale/10, width: verticalLinesWidth}}/>
-      <div className={lineRight} style={{left: 320 - 3*readMore/4 + (-position.x - props.state.windowWidth/6)*mouseMoveScale/10, width: verticalLinesWidth}}/>
-      <div className={lineTop} style={{left: readMore/2 + props.state.windowWidth/12 + (position.y - 222)*mouseMoveScale/7, width: horizontalLinesWidth}}/>
-      <div className={lineBottom} style={{left: contact + 100 + readMore/4 + 6*props.state.windowWidth/12 - (position.y - 222)*mouseMoveScale/7, width: horizontalLinesWidth,}}/>
+    <div className="background-container">
+      <div
+        className="interactive-background line-top"
+        style={{left: lineTopStart + position.y/8*mouseMoveScale}}
+      />
+      <div
+        className="interactive-background line-right"
+        style={{right: lineRightStart+ position.x/15*mouseMoveScale, height: lineRightHeight}}
+      />
+      <div
+        className="interactive-background line-bottom"
+        style={{right: lineBottomStart+ position.y/8*mouseMoveScale}}
+      />
+      <div
+        className="interactive-background line-left"
+        style={{left: lineLeftStart+ position.x/15*mouseMoveScale, height: lineLeftHeight}}
+      />
     </div>
   );
 }

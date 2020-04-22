@@ -128,7 +128,20 @@ hr {
   height: 0;
   overflow: visible;
 }
-button,
+button {
+  display: block;
+  width: 100%;
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  border-radius: 0;
+  font-size: .875em;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: 160ms ease-out;
+}
 input,
 optgroup,
 select,
