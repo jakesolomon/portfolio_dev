@@ -1,0 +1,38 @@
+.read-more-container {
+  position: absolute;
+  margin: 0px auto;
+  width: 45%;
+  height: 50%;
+
+  top: 23%;
+  left: 0%;
+  right: 33%;
+  z-index: 2;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: 400ms cubic-bezier(1,1,.5,1);
+
+  padding: 30px 40px;
+  text-align: justify;
+}
+
+.read-more-container-appear {
+  visibility: visible;
+  opacity: 1;
+}
+
+.about-me-content {
+  position: absolute;
+  padding: 0px 40px 0px 0px;
+}
+
+.about-me-dissapear {
+  visibility: hidden;
+  opacity: 0;
+  transition: 400ms cubic-bezier(1,1,.5,1);
+}
+
+.contact-container {
+  transition: 400ms cubic-bezier(1,1,.5,1);
+}

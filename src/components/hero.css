@@ -1,0 +1,29 @@
+.hero {
+  display: inline-block;
+  width: 98%;
+  position: absolute;
+  left: -15px;
+
+  transition: 700ms cubic-bezier(1,0,.5,1);
+}
+
+.hero-title {
+  font-size: 4.6em;
+  margin-bottom: 0.1em;
+  letter-spacing: .03em;
+
+  transition: 700ms cubic-bezier(.69,0,.19,1);
+}
+
+.hero-subtitle {
+  font-size: 1.1em;
+  font-style: italic;
+  font-weight: 350;
+  margin-bottom: .9em;
+
+  transition: 700ms cubic-bezier(.26,.01,0,1);
+}
+
+.disappear {
+  opacity: 0;
+}

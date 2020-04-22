@@ -1,0 +1,18 @@
+.projects-container{
+  margin: 120px 0px;
+}
+
+.project-description{
+  max-width: 450px;
+}
+
+.project-image {
+  max-width: 450px;
+  float: right;
+  margin: 0 0 1em 1em;
+}
+
+.software-icon {
+  position: relative;
+  top: 3px;
+}
