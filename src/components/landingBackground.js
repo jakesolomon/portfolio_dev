@@ -80,7 +80,7 @@ function LandingBackground(props) {
         className="interactive-background line-left"
         style={{left: lineLeftStart+ position.x/15*mouseMoveScale, height: lineLeftHeight}}
       />
-    </div>
+   </div>
   );
 }
 

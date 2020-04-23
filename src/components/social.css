@@ -48,3 +48,12 @@
 .codepen-icon:hover {
   stroke: var(--secondary-highlight-color);
 }
+
+.github-icon {
+  fill: var(--primary-text-color);
+  transition: 150ms;
+}
+
+.github-icon:hover {
+  fill: var(--secondary-highlight-color);
+}
