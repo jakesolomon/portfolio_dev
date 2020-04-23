@@ -14,7 +14,9 @@ function Button(props) {
 
   function onClick() {
     changeButtonState("-clicked");
-    props.onClick();
+    if (props.onClick) {
+      props.onClick();
+    }
     setTimeout(() => changeButtonState(""), 1000);
   }
 
@@ -29,7 +31,7 @@ function Button(props) {
       onMouseLeave={() => buttonLeave(props.clicked)}
       onClick={() => onClick()}
     >
-      <button className={buttonText}>{props.text}</button>
+      <button className={buttonText} >{props.text}</button>
       <div className={buttonBorderTop} />
       <div className={buttonBorderRight} />
       <div className={buttonBorderBottom} />
