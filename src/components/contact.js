@@ -45,13 +45,11 @@ class Contact extends Component {
     xhr.onreadystatechange = () => {
       if (xhr.readyState !== XMLHttpRequest.DONE) {console.log("xhr.readyState !== XMLHttpRequest.DONE"); return;}
       if (xhr.status === 200) {
-        console.log(xhr.status);
         this.setState({ name: "" });
         this.setState({ email: "" });
         this.setState({ message: "" });
         this.setState({ status: "SUCCESS" });
       } else {
-        console.log(xhr.status);
         this.setState({ status: "ERROR" });
       }
     };
