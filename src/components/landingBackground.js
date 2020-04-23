@@ -15,7 +15,7 @@ function LandingBackground(props) {
     };
   }, []);
 
-  var windowWidth = props.state.windowWidth;
+  var windowWidth = props.windowWidth;
 
 
   var lineTopStart;

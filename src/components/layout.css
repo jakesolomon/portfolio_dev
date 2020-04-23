@@ -154,13 +154,13 @@ textarea {
   box-sizing: border-box;
   margin: 0;
   border-radius: 0;
-  border-bottom: 2px solid var(--primary-text-color);
+  border-bottom: 2px solid var(--primary-text-color);;
   font-size: .875em;
   background: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  transition: 0ms ease-out;
+  transition: 160ms ease-out;
   transition: border-bottom 160ms ease-out;
 }
 input:-webkit-autofill,
@@ -329,7 +329,7 @@ h2 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
+  font-size: 2rem;
   line-height: 1.1;
 }
 h3 {
