@@ -147,19 +147,38 @@ optgroup,
 select,
 textarea {
   font: inherit;
+  color: var(--primary-text-color);
   display: block;
   width: 100%;
   border: 0;
   box-sizing: border-box;
   margin: 0;
   border-radius: 0;
-  border-bottom: 2px solid var(--primary-text-color);;
+  border-bottom: 2px solid var(--primary-text-color);
   font-size: .875em;
   background: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  transition: 160ms ease-out;
+  transition: 0ms ease-out;
+  transition: border-bottom 160ms ease-out;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-internal-autofill-selected,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-bottom: 2px solid var(--primary-text-color);
+  -webkit-text-fill-color: var(--primary-text-color);
+  -webkit-box-shadow: 0px 0 0px 1000px var(--primary-bg-color) inset;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 textarea {
   min-height: 100px;
