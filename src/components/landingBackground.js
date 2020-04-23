@@ -73,10 +73,10 @@ function LandingBackground(props) {
   return(
     <div>
       <div className="background-spacer" style={{height: spacerHeight, opacity: spacerOpacity}}/>
-      <div className={lineLeft} style={{left: 0 - readMore/10 + (position.x - props.state.windowWidth/3)*mouseMoveScale/10, width: verticalLinesWidth}}/>
-      <div className={lineRight} style={{left: 320 - 3*readMore/4 + (-position.x - props.state.windowWidth/6)*mouseMoveScale/10, width: verticalLinesWidth}}/>
-      <div className={lineTop} style={{left: readMore/2 + props.state.windowWidth/12 + (position.y - 222)*mouseMoveScale/7, width: horizontalLinesWidth}}/>
-      <div className={lineBottom} style={{left: contact + 100 + readMore/4 + 6*props.state.windowWidth/12 - (position.y - 222)*mouseMoveScale/7, width: horizontalLinesWidth,}}/>
+      <div className={lineLeft} style={{left: 0 - readMore/10 + (position.x - props.windowWidth/3)*mouseMoveScale/10, width: verticalLinesWidth}}/>
+      <div className={lineRight} style={{left: 320 - 3*readMore/4 + (-position.x - props.windowWidth/6)*mouseMoveScale/10, width: verticalLinesWidth}}/>
+      <div className={lineTop} style={{left: readMore/2 + props.windowWidth/12 + (position.y - 222)*mouseMoveScale/7, width: horizontalLinesWidth}}/>
+      <div className={lineBottom} style={{left: contact + 100 + readMore/4 + 6*props.windowWidth/12 - (position.y - 222)*mouseMoveScale/7, width: horizontalLinesWidth,}}/>
     </div>
   );
 }
