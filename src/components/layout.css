@@ -60,6 +60,7 @@ footer {
   overflow: hidden;
 }
 a {
+  color: var(--primary-highlight-color);
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
@@ -68,7 +69,6 @@ a:hover {
   outline-width: 0;
 }
 a:visited {
-  color: var(--primary-highlight-color);
 }
 abbr[title] {
   border-bottom: none;
