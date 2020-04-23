@@ -10,22 +10,9 @@
   max-width: 450px;
   float: right;
   margin: 0 0 1em 1em;
-  transition: .2s ease;
-}
-
-.project-image:hover {
-  max-width: 455px;
 }
 
 .software-icon {
   position: relative;
   top: 3px;
-}
-
-.project-divider {
-  position: relative;
-  left: -30vw;
-  width: 160vw;
-  height: 1px;
-  background-color: #DDD;
 }

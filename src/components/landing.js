@@ -11,26 +11,51 @@ class Landing extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      hero: true,
+      readMore: false,
+      viewContact: false,
+      transition: "hero",
       windowWidth: 0
     };
+    this.readMore = this.readMore.bind(this);
+    this.readLess = this.readLess.bind(this);
+  }
+
+  readMore() {
+    this.setState( { hero: false } );
+    this.setState( { transition: "readMore" } );
+    setTimeout(() => this.setState( { readMore: true } ), 250);
+  }
+
+  readLess() {
+    this.setState( { readMore: false } );
+    this.setState( { viewContact: false } );
+    setTimeout(() => this.setState( { hero: true } ), 200);
+    setTimeout(() => this.setState( { transition: "hero" } ), 250);
+  }
+
+  viewContact() {
+    this.setState( { transition: "contact" } );
+    setTimeout(() => this.setState( { viewContact: true } ), 250);
   }
 
   componentDidMount() {
     this.setState( {windowWidth: window.innerWidth} );
   }
 
+
   render() {
 
     const readMoreButton = (
-      <Button clicked={!this.props.pageState.hero} text="Read More" onClick={() => this.props.readMore()}/>
+      <Button clicked={!this.state.hero} text="Read More" onClick={() => this.readMore()}/>
     );
 
     const contactButton = (
-      <Button clicked={!this.props.pageState.readMore} text="Contact" onClick={() => this.props.viewContact()}/>
+      <Button clicked={!this.state.readMore} text="Contact" onClick={() => this.viewContact()}/>
     );
 
     const closeReadMore = (
-      <div className="close-about-me" onClick={() => this.props.readLess()} >
+      <div className="close-about-me" onClick={() => this.readLess()} >
         <span />
         <span />
       </div>
@@ -39,10 +64,10 @@ class Landing extends Component {
     return(
       <div className="landing" id="landing">
         <div className="hero-container" >
-          <Hero state={this.props.pageState} readMoreButton={readMoreButton} />
+          <Hero state={this.state} readMoreButton={readMoreButton} />
         </div>
-        <ReadMore state={this.props.pageState} contactButton={contactButton} closeReadMore={closeReadMore}/>
-        <LandingBackground state={this.props.pageState} windowWidth={this.state.windowWidth}/>
+        <ReadMore state={this.state} contactButton={contactButton} closeReadMore={closeReadMore}/>
+        <LandingBackground state={this.state} />
       </div>
     );
   }
