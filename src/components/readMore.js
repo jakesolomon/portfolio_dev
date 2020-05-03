@@ -19,10 +19,10 @@ function ReadMore(props) {
       <div className={aboutMeContent}>
         <h2>About Me</h2>
         <p>I write code because it’s fun. I like making practical things that
-        feel good to use. With a background in biology research and a degree in
-        math, data analysis and interpretation have naturally become my focus.<br/><br/>
-        I spend happy hours mucking around with my projects. It would be nice
-        to get paid for one.</p>
+        feel good to use. My background in biology research and degree in
+        math have naturally guided me as a developer to focus on data.<br/><br/>
+        I spend happy hours mucking around with my projects, and I'm looking for more.
+        Feel free to connect if there's something you'd like to work on together.</p>
         {props.contactButton}
       </div>
       <div className={contactClass}>

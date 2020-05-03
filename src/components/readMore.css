@@ -14,8 +14,7 @@
   transition: 400ms cubic-bezier(1,1,.5,1);
 
   padding: 30px 40px;
-  text-align: justify;
-}
+  }
 
 .read-more-container-appear {
   visibility: visible;

@@ -30,12 +30,12 @@ function LandingBackground(props) {
 
   if (props.state.transition == "hero") {
     lineTopStart = windowWidth*0.05;
-    lineRightStart = windowWidth*0.17;
-    lineBottomStart = 0;
-    lineLeftStart = windowWidth*0.17;
+    lineRightStart = windowWidth*0.13;
+    lineBottomStart = windowWidth*0.05;
+    lineLeftStart = windowWidth*0.13;
 
     lineLeftHeight = "25%";
-    lineRightHeight = "15%";
+    lineRightHeight = "17%";
 
     mouseMoveScale = 1;
   }
@@ -66,19 +66,19 @@ function LandingBackground(props) {
     <div className="background-container">
       <div
         className="interactive-background line-top"
-        style={{left: lineTopStart + position.y/8*mouseMoveScale}}
+        style={{left: lineTopStart + position.y/12*mouseMoveScale}}
       />
       <div
         className="interactive-background line-right"
-        style={{right: lineRightStart+ position.x/15*mouseMoveScale, height: lineRightHeight}}
+        style={{right: lineRightStart+ position.x/35*mouseMoveScale, height: lineRightHeight}}
       />
       <div
         className="interactive-background line-bottom"
-        style={{right: lineBottomStart+ position.y/8*mouseMoveScale}}
+        style={{right: lineBottomStart+ position.y/12*mouseMoveScale}}
       />
       <div
         className="interactive-background line-left"
-        style={{left: lineLeftStart+ position.x/15*mouseMoveScale, height: lineLeftHeight}}
+        style={{left: lineLeftStart+ position.x/35*mouseMoveScale, height: lineLeftHeight}}
       />
     </div>
   );

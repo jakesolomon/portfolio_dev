@@ -5,6 +5,8 @@ import Social from "./social.js";
 
 import "./footer.css";
 
+// Add at end for interactive background: <div className="footer-background-wrapper"><FooterBackground /></div>
+
 const Footer = () => (
   <footer>
     <div className="footer-wrapper">
@@ -16,7 +18,6 @@ const Footer = () => (
       {` `}
       <a href="http://riccardozanutta.com/" target="_blank" rel="noopener noreferrer">Riccardo Zanutta</a>.
     </div>
-    <div className="footer-background-wrapper"><FooterBackground /></div>
   </footer>
 );
 

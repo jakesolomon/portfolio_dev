@@ -1,9 +1,14 @@
 .projects-container{
-  margin: 120px 0px;
+  color: var(--secondary-text-color);
+  margin: 140px 0px;
 }
 
 .project-description{
   max-width: 450px;
+}
+
+.big {
+  font-size: 1.6em;
 }
 
 .project-image {
@@ -28,4 +33,34 @@
   width: 160vw;
   height: 1px;
   background-color: #DDD;
+}
+
+@media only screen and (max-width: 750px) {
+
+  .project-image {
+    float: none;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .project-image:hover {
+    max-width: none;
+  }
+
+  .project-description{
+    max-width: none;
+    padding-top: 20px;
+  }
+
+  .projects-container {
+    margin: 50px 0px;
+  }
+
+  .projects-container h1{
+    text-align: center;
+    font-size: 60px;
+    font-size: 9vw;
+  }
+
 }
