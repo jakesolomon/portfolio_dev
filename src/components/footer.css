@@ -1,7 +1,8 @@
 .footer-wrapper {
   max-width: 960px;
   height: 130px;
-  margin: 0px auto;
+  margin: 5px auto;
+  padding: 0px 50px;
   position: absolute;
   right: 0px;
   left: 0px;

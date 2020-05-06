@@ -27,3 +27,30 @@
 .disappear {
   opacity: 0;
 }
+
+@media only screen and (max-width: 800px) {
+  .hero {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+  }
+
+  .hero-title {
+    font-size: 3em;
+    font-size: 11vw;
+    line-height: 1.3em;
+    /* margin-right: 10px; */
+  }
+
+  .hero-subtitle {
+    font-size: .98em;
+    font-size: 4.5vw;
+    line-height: 1.3em;
+    letter-spacing: .01em;
+    /* margin-right: 100px; */
+  }
+
+  .hero-social {
+    visibility: hidden;
+  }
+}

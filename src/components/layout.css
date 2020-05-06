@@ -2,8 +2,9 @@
 
 :root {
   --primary-bg-color: #171A1B;
-  --primary-text-color: #BFBDBB;
   --secondary-bg-color: white;
+  /* --primary-text-color: #BFBDBB; */
+  --primary-text-color: #DFDDDB;
   --secondary-text-color: #5E686E;
   --primary-highlight-color: #75A892;
   --secondary-highlight-color: #8E3E3E;
@@ -53,7 +54,7 @@ template {
 }
 footer {
   background: var(--primary-bg-color);
-  height: 150px;
+  height: 160px;
   width: 100%;
   text-align: center;
   align-items: center;

@@ -12,6 +12,7 @@ function Hero(props) {
   var hero = `hero ${disappear}`;
   var heroTitle = `hero-title ${disappear}`;
   var heroSubtitle = `hero-subtitle ${disappear}`;
+  var heroSocial = `hero-social ${disappear}`;
 
   return(
     <div>
@@ -20,7 +21,7 @@ function Hero(props) {
         <h4 className={heroSubtitle} >Front-End Developer and Analytics Engineer</h4>
         {props.readMoreButton}
         </div>
-      <div className={disappear} >
+      <div className={heroSocial} >
         <Social display="vertical"/>
       </div>
     </div>

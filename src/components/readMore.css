@@ -35,3 +35,19 @@
 .contact-container {
   transition: 400ms cubic-bezier(1,1,.5,1);
 }
+
+@media only screen and (max-width: 800px) {
+  .read-more-container {
+    width: 100%;
+    top: 20vh;
+    left: 0%;
+    right: 0%;
+    font-size: 1em;
+    padding: 20px 28px;
+  }
+
+  .read-more-container h2{
+    font-size: 1.9em;
+  }
+
+}

@@ -34,6 +34,28 @@
   bottom: 30%;
 }
 
-.contact {
-  top: -140px;
+@media only screen and (max-width: 750px) {
+  /* .interactive-background {
+    background: var(--secondary-highlight-color);;
+  } */
+
+  .line-left {
+    height: 25% !important;
+    left: 10% !important;
+  }
+
+  .line-right {
+    bottom: 10%;
+    height: 25% !important;
+    right: 10% !important;
+  }
+
+  .line-top {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .line-bottom {
+    visibility: hidden;
+  }
 }
