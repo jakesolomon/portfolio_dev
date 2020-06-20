@@ -1,0 +1,61 @@
+.background-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.interactive-background {
+  position: absolute;
+  background: var(--primary-highlight-color);;
+  transform: skewX(-45deg);
+  transition: 850ms cubic-bezier(.05,0.12,0,1);
+  overflow: hidden;
+}
+
+.line-left {
+  width: 5px;
+}
+
+.line-right {
+  width: 5px;
+  bottom: 25%;
+}
+
+.line-top {
+  height: 5px;
+  width: 40%;
+  top: 20%;
+}
+
+.line-bottom {
+  height: 5px;
+  width: 40%;
+  bottom: 30%;
+}
+
+@media only screen and (max-width: 750px) {
+  /* .interactive-background {
+    background: var(--secondary-highlight-color);;
+  } */
+
+  .line-left {
+    height: 25% !important;
+    left: 10% !important;
+  }
+
+  .line-right {
+    bottom: 10%;
+    height: 25% !important;
+    right: 10% !important;
+  }
+
+  .line-top {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .line-bottom {
+    visibility: hidden;
+  }
+}
