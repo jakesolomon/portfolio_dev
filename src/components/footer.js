@@ -14,9 +14,6 @@ const Footer = () => (
       © {new Date().getFullYear()}, Built with
       {` `}
       <a href="https://www.gatsbyjs.org">Gatsby</a>.
-      Site design ripped off from
-      {` `}
-      <a href="http://riccardozanutta.com/" target="_blank" rel="noopener noreferrer">Riccardo Zanutta</a>.
     </div>
   </footer>
 );

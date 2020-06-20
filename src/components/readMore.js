@@ -18,7 +18,7 @@ function ReadMore(props) {
       {props.closeReadMore}
       <div className={aboutMeContent}>
         <h2>About Me</h2>
-        <p>I write code because it’s fun. I like making practical things that
+        <p>I like making practical things that
         feel good to use. My background in biology research and degree in
         math have naturally guided me as a developer to focus on data.<br/><br/>
         I spend happy hours mucking around with my projects, and I'm looking for more.
