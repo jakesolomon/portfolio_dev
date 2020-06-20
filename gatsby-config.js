@@ -5,25 +5,19 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
-<<<<<<< HEAD
-=======
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-170128260-1",
       },
     },
->>>>>>> parent of 76c4d05... Updates
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
-<<<<<<< HEAD
         trackingId: "UA-170128260-1",
-=======
->>>>>>> parent of 76c4d05... Updates
       },
     },
     `gatsby-transformer-sharp`,
