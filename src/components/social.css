@@ -1,0 +1,59 @@
+.social-container-vertical {
+  position: absolute;
+  right: 0px;
+}
+
+.social-container-horizontal {
+  padding-top: 30px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-icon-vertical {
+  position: relative;
+  padding-bottom: 20px;
+  width: 25px;
+}
+
+.social-icon-horizontal {
+  display: inline;
+  width: 25px;
+  margin: 0px 20px;
+}
+
+.gmail-icon {
+  fill: var(--primary-text-color);
+  transition: 150ms;
+}
+
+.gmail-icon:hover {
+  fill: var(--secondary-highlight-color);
+}
+
+.linkedin-icon {
+  fill: var(--primary-text-color);
+  transition: 150ms;
+}
+
+.linkedin-icon:hover {
+  fill: var(--secondary-highlight-color);
+}
+
+.codepen-icon {
+  stroke: var(--primary-text-color);
+  transition: 150ms;
+}
+
+.codepen-icon:hover {
+  stroke: var(--secondary-highlight-color);
+}
+
+.github-icon {
+  fill: var(--primary-text-color);
+  transition: 150ms;
+}
+
+.github-icon:hover {
+  fill: var(--secondary-highlight-color);
+}
