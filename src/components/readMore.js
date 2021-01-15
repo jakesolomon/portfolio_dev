@@ -18,11 +18,17 @@ function ReadMore(props) {
       {props.closeReadMore}
       <div className={aboutMeContent}>
         <h2>About Me</h2>
-        <p>I like making practical things that
-        feel good to use. My background in biology research and degree in
-        math have naturally guided me as a developer to focus on data.<br/><br/>
-        I spend happy hours mucking around with my projects, and I'm looking for more.
-        Feel free to connect if there's something you'd like to work on together.</p>
+        <p>I like making practical things that feel good to use.
+        Naturally, I love front-end developing and repairing ill-maintained electric guitars.
+        <br/><br/>
+
+        My journey as a developer has occurred very organically: each
+        lesson learned has first presented itself as a nasty roadblock in an interesting project.
+        I specialize in React, JavaScript, and relational databases, but am always looking
+        forwards to the next lesson.
+        <br/><br/>
+
+        Feel free to connect if you'd like to work together.</p>
         {props.contactButton}
       </div>
       <div className={contactClass}>

@@ -22,7 +22,7 @@ class Landing extends Component {
   render() {
 
     const readMoreButton = (
-      <Button clicked={!this.props.pageState.hero} text="Read More" onClick={() => this.props.readMore()}/>
+      <Button clicked={!this.props.pageState.hero} text="About Me" onClick={() => this.props.readMore()}/>
     );
 
     const contactButton = (

@@ -1,12 +1,13 @@
 .read-more-container {
   position: absolute;
   margin: 0px auto;
-  width: 45%;
+  width: 33%;
+  min-width: 500px;
   height: 50%;
 
   top: 23%;
   left: 0%;
-  right: 33%;
+  right: 40%;
   z-index: 2;
 
   visibility: hidden;
@@ -24,6 +25,7 @@
 .about-me-content {
   position: absolute;
   padding: 0px 40px 0px 0px;
+  line-height: 1.8em;
 }
 
 .about-me-dissapear {

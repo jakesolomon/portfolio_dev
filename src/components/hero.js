@@ -18,7 +18,7 @@ function Hero(props) {
     <div>
       <div className={hero} >
         <h1 className={heroTitle} >Jake Solomon</h1>
-        <h4 className={heroSubtitle} >Front-End Developer and Analytics Engineer</h4>
+        <h4 className={heroSubtitle} >Front-End Developer</h4>
         {props.readMoreButton}
         </div>
       <div className={heroSocial} >
