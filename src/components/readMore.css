@@ -1,13 +1,13 @@
 .read-more-container {
   position: absolute;
   margin: 0px auto;
-  width: 33%;
+  width: 45%;
   min-width: 500px;
   height: 50%;
 
   top: 23%;
   left: 0%;
-  right: 40%;
+  right: 33%;
   z-index: 2;
 
   visibility: hidden;
@@ -41,11 +41,14 @@
 @media only screen and (max-width: 800px) {
   .read-more-container {
     width: 100%;
-    top: 20vh;
+    height: 100%;
+    top: 10vh;
     left: 0%;
     right: 0%;
     font-size: 1em;
     padding: 20px 28px;
+    min-width: unset;
+    overflow-y: scroll;
   }
 
   .read-more-container h2{

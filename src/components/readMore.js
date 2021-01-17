@@ -21,14 +21,11 @@ function ReadMore(props) {
         <p>I like making practical things that feel good to use.
         Naturally, I love front-end developing and repairing ill-maintained electric guitars.
         <br/><br/>
-
         My journey as a developer has occurred very organically: each
         lesson learned has first presented itself as a nasty roadblock in an interesting project.
         I specialize in React, JavaScript, and relational databases, but am always looking
-        forwards to the next lesson.
-        <br/><br/>
-
-        Feel free to connect if you'd like to work together.</p>
+        forward to the next lesson.
+        </p>
         {props.contactButton}
       </div>
       <div className={contactClass}>
