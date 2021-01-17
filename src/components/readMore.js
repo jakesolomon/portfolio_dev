@@ -23,7 +23,7 @@ function ReadMore(props) {
         <br/><br/>
         My journey as a developer has occurred very organically: each
         lesson learned has first presented itself as a nasty roadblock in an interesting project.
-        I specialize in React, JavaScript, and relational databases, but am always looking
+        I specialize in React, JavaScript, and relational databases, and am always looking
         forward to the next lesson.
         </p>
         {props.contactButton}
