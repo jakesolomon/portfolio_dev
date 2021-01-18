@@ -33,7 +33,7 @@ function Projects(props) {
   );
 
   const areaReview = (
-    <p style={{fontStyle: "italic", margin: "0px 60px"}}>
+    <p className="project-review">
       "Jake delivered incredible work on this Google Maps API development project
       and I enjoyed working with him. Very responsive, provided weekly
       detailed updates. He provided powerful insight in our brainstorms which
@@ -51,7 +51,7 @@ function Projects(props) {
 
   const goodWeatherDescription = (
     <p className="project-description">
-      <a href="https://fair-weather.netlify.app/" target="_blank"><b>The Good Weather Map</b></a> is
+      <a href="https://jakesolomon.github.io/fair-weather" target="_blank"><b>The Good Weather Map</b></a> is
       my take on a classic weather app API demo.<br/><br/>
       It searches for states with clear skies and nice temperatures, and
       highlights them on the US map. You can find the

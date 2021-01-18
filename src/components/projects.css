@@ -18,6 +18,11 @@
   max-width: 450px;
 }
 
+.project-review {
+  font-style: italic;
+  margin: 0px 60px;
+}
+
 .big {
   font-size: 1.6em;
 }
@@ -62,9 +67,13 @@
     max-width: none;
   }
 
-  .project-description{
+  .project-description {
     max-width: none;
     padding-top: 20px;
+  }
+
+  .project-review {
+    margin: 0px 0px;
   }
 
   .projects-container {
