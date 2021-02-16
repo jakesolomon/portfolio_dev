@@ -1,20 +1,19 @@
 .landing {
-  background: var(--primary-bg-color);
-  height: 90vh;
+  /* background: var(--primary-bg-color); */
+  height: 100vh;
 }
 
 .hero-container {
   color: var(--primary-text-color);
 
-  position: absolute;
+  position: fixed;
   width: 75%;
   margin: 0px 12.5%;
   height: 200px;
-  top: 33%;
+  top: 35%;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 2;
 }
 
 .about-me {
@@ -98,7 +97,7 @@
     }
 
     .close-about-me:hover span:after,.close-contact:hover span:before {
-        width: 100%
+        width: 100%;
     }
 
     .close-about-me:hover span:first-child {

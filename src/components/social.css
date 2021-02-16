@@ -1,3 +1,33 @@
+.email-tool-tip {
+  /* width: 200px; */
+  height: 25px;
+  background-color: #FFF;
+  position: absolute;
+  right: 50px;
+  border-radius: 3px;
+  transition: 300ms cubic-bezier(.25,.1,.25,1);
+  color: var(--primary-bg-color);
+  font-size: .8em;
+  overflow: hidden;
+}
+
+.email-tool-tip-horizontal {
+  display: inline-block;
+  right: 0px;
+}
+
+@media only screen and (max-width: 800px) {
+  .email-tool-tip-horizontal {
+    display: block;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+  }
+
+}
+
+
 .social-container-vertical {
   position: absolute;
   right: 0px;

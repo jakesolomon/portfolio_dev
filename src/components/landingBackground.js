@@ -6,14 +6,23 @@ import "./landingBackground.css";
 function LandingBackground(props) {
 
   const [position, setPosition] = useState({ x: 0, y: 0 });
+  // const [hoveredElement, setHoveredElement] = useState(null);
+  // const [hoveredElementDisplay, setHoveredElementDisplay] = useState(null);
 
   useEffect(() => {
     const setFromEvent = e => setPosition({ x: e.clientX, y: e.clientY });
-    window.addEventListener("mousemove", setFromEvent);
     return () => {
       window.removeEventListener("mousemove", setFromEvent);
     };
   }, []);
+
+// custom cursor
+
+
+
+
+
+// end
 
   var windowWidth = props.windowWidth;
 
@@ -63,7 +72,7 @@ function LandingBackground(props) {
   }
 
   return(
-    <div className="background-container">
+    <div className="background-container" >
       <div
         className="interactive-background line-top"
         style={{left: lineTopStart + position.y/12*mouseMoveScale}}
@@ -80,6 +89,13 @@ function LandingBackground(props) {
         className="interactive-background line-left"
         style={{left: lineLeftStart+ position.x/35*mouseMoveScale, height: lineLeftHeight}}
       />
+      <div
+        className="landing-to-projects-indicator"
+        style={props.state.transition == "hero" ? {opacity: 1} : {opacity: 0}}
+      >
+        <p>Projects</p>
+        <div className="landing-to-projects-line"/>
+      </div>
     </div>
   );
 }

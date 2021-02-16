@@ -1,17 +1,6 @@
 .projects-container {
   color: var(--secondary-text-color);
-  margin: 80px 0px;
-}
-
-.vertical-line {
-  border-left: 1.5px solid var(--primary-bg-color);
-  opacity: .4;
-  height: 100%;
-  overflow: hidden;
-  position: absolute;
-  left: 50%;
-  margin-left: -.75px;
-  z-index: -1;
+  padding: 80px 0px 0px 0px;
 }
 
 .project-description {

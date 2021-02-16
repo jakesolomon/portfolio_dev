@@ -1,6 +1,9 @@
 import React from "react";
 
 function Gmail(props) {
+
+
+
   return(
     <svg
     className="gmail-icon"

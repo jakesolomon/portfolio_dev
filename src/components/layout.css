@@ -1,13 +1,18 @@
 /* Color Scheme */
 
 :root {
-  --primary-bg-color: #171A1B;
+  --primary-bg-color: #678;
+  /* --primary-bg-color: #171A1B; */
   --secondary-bg-color: white;
   /* --primary-text-color: #BFBDBB; */
-  --primary-text-color: #DFDDDB;
+  --primary-text-color: white;
+  /* --primary-text-color: #DFDDDB; */
   --secondary-text-color: #5E686E;
-  --primary-highlight-color: #75A892;
-  --secondary-highlight-color: #8E3E3E;
+  --primary-highlight-color: #95C8A2;
+  /* --primary-highlight-color: #75A892; */
+  --primary-highlight-color-transparent: #75A89230;
+  --secondary-highlight-color: #D99;
+  /* --secondary-highlight-color: #8E3E3E; */
 }
 
 html {
@@ -707,3 +712,11 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+/* :hover {
+  outline: 5px solid black;
+} */
+/*
+#___gatsby{
+  cursor: none;
+} */

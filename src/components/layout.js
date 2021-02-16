@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div>
+      <div style={{width: `100%`, backgroundColor: "#FFF", zIndex: 10, position: "relative"}}>
         <main
           style={{
             margin: `0 auto`,

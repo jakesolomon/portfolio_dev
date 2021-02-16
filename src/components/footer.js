@@ -8,7 +8,7 @@ const Footer = () => (
   <footer>
     <div className="footer-wrapper">
       <Social display="horizontal"/>
-      © {new Date().getFullYear()}, Built with
+      © {new Date().getFullYear()}, built with
       {` `}
       <a href="https://www.gatsbyjs.org" target="_blank">Gatsby</a>.
     </div>

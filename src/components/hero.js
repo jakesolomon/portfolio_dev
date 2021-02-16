@@ -12,7 +12,7 @@ function Hero(props) {
   var hero = `hero ${disappear}`;
   var heroTitle = `hero-title ${disappear}`;
   var heroSubtitle = `hero-subtitle ${disappear}`;
-  var heroSocial = `hero-social ${disappear}`;
+  var heroSocial = `hero-social`;
 
   return(
     <div>

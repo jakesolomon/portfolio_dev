@@ -18,14 +18,11 @@ function Projects(props) {
     <img className="software-icons" src={ruby} alt="react icon" />
   );
 
-
-
-
   const areaDescription = (
     <p className="project-description">
       <b>Area</b> is a location-sharing app that highlights user-generated content.<br/><br/>
-      I developed this browser app in React and designed the database schema using <a href="https://hasura.io/cloud/" target="_blank">Hasura Cloud</a>.
-      An accompanying native mobile app is in development, and both will be officially released in Spring 2021.<br/><br/>
+      I developed the browser version of this app in React and designed the database schema using <a href="https://hasura.io/cloud/" target="_blank">Hasura Cloud</a>.
+      My work is being used as a foundation for the development of an accompanying native mobile app, and both will be officially released in Spring 2021.<br/><br/>
       Area is also powered by <a href="https://stripe.com/" target="_blank">Stripe</a>, <a href="https://auth0.com/" target="_blank">Auth0</a>, <a href="https://cloudinary.com/" target="_blank">Cloudinary</a>, and <a href="https://developers.google.com/maps/documentation/javascript/overview" target="_blank">Google Maps API</a>.
       <br/><br/>
       If you'd like to know more, <a href="#landing" onClick={props.straightToContact}>send me a message</a>. I'd love to chat about it.
@@ -44,7 +41,7 @@ function Projects(props) {
   const tutorstatDescription = (
     <p className="project-description">
       <b>Tutorstat</b> is an internal data analytics app that shows insights about tutor and student performance.<br/><br/>
-      I'm developing this project to meet the needs of a growing test-prep center to help inform training policy and educate clients about the process.<br/><br/>
+      I developed this project for a test-prep center to help inform training policy and educate clients.<br/><br/>
       I use React for front-end. Data is processed in Ruby before served via Fetch API and displayed using React Vis.<br/><br/>
     </p>
   );
@@ -60,9 +57,9 @@ function Projects(props) {
   );
 
   return(
-    <div style={{marginBottom: "130px"}}>
+    <div style={{marginBottom: "130px"}} id="projects">
       <div className="projects-container">
-        <h1>What I'm Working on</h1>
+        <h2>What I'm Working on</h2>
         <img className="project-image" src={areaMockup} alt="location sharing app" />
         <br/>
         {areaDescription}
@@ -74,7 +71,6 @@ function Projects(props) {
         {tutorstatDescription}
       </div>
       <div className="projects-container">
-        <h2>Bits and Bytes</h2>
         <img className="project-image" src={goodweather} alt="weather app" />
         <br/>
         {goodWeatherDescription}

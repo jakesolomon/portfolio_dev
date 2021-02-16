@@ -1,0 +1,8 @@
+.cursor-text {
+  width: 200px;
+  height: 300px;
+  padding: 10px;
+  background-color: #00000040;
+  z-index: 10;
+  opacity: .9;
+}
