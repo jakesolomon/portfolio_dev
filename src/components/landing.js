@@ -12,12 +12,14 @@ class Landing extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      windowWidth: 0
+      windowWidth: 0,
+      loading: true
     };
   }
 
   componentDidMount() {
     this.setState( {windowWidth: window.innerWidth} );
+    setTimeout(() => {  this.setState( {loading: false} ); }, 300);
   }
 
   render() {
@@ -45,7 +47,7 @@ class Landing extends Component {
 
     return(
       <div className="landing" id="landing">
-        <div className="hero-container">
+        <div className="hero-container" style={{opacity: this.state.loading ? "0" : "1"}}>
           <Hero state={this.props.pageState} readMoreButton={readMoreButton} />
         </div>
         <ReadMore
@@ -54,7 +56,10 @@ class Landing extends Component {
           closeReadMore={closeReadMore}
           viewProjectsButton={viewProjectsButton}
         />
-        <LandingBackground state={this.props.pageState} windowWidth={this.state.windowWidth}/>
+        <LandingBackground
+          state={this.props.pageState}
+          windowWidth={this.state.windowWidth}
+        />
       </div>
     );
   }

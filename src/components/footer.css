@@ -2,7 +2,7 @@
   max-width: 960px;
   height: 130px;
   margin: 5px auto;
-  padding: 0px 50px;
+  /* padding: 0px 50px; */
   position: absolute;
   right: 0px;
   left: 0px;
@@ -16,4 +16,8 @@
   margin: 0px auto;
   position: relative;
   z-index: 0;
+}
+
+footer a {
+  color: var(--secondary-highlight-color)
 }

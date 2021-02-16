@@ -6,11 +6,13 @@ import "./landingBackground.css";
 function LandingBackground(props) {
 
   const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [loading, setLoading] = useState(true)
   // const [hoveredElement, setHoveredElement] = useState(null);
   // const [hoveredElementDisplay, setHoveredElementDisplay] = useState(null);
 
   useEffect(() => {
     const setFromEvent = e => setPosition({ x: e.clientX, y: e.clientY });
+    setTimeout(() => {  setLoading(false); }, 600);
     return () => {
       window.removeEventListener("mousemove", setFromEvent);
     };
@@ -91,7 +93,7 @@ function LandingBackground(props) {
       />
       <div
         className="landing-to-projects-indicator"
-        style={props.state.transition == "hero" ? {opacity: 1} : {opacity: 0}}
+        style={props.state.transition != "hero" || loading ? {opacity: 0} : {opacity: 1}}
       >
         <p>Projects</p>
         <div className="landing-to-projects-line"/>
